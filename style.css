@@ -147,7 +147,10 @@ body {
   scroll-snap-align: start;
 
   filter: grayscale(100%);
-  transition: filter 0.4s ease;
+  transition: 
+    transform 0.35s ease,
+    filter 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .carousel img:hover {
