@@ -155,6 +155,8 @@ body {
 
 .carousel img:hover {
   filter: grayscale(0%);
+  transform: scale(1.06) translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* esconder scrollbar (clean cinema look) */
