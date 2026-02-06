@@ -304,36 +304,36 @@ footer a:hover {
    SCROLL ANIMATIONS
 ===================== */
 
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition:
-    opacity 0.9s ease,
-    transform 0.9s ease;
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease;
+.project-split + .carousel {
+  margin-top: 1.5rem;
 }
 
-.reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* stagger suave para carrossel */
 .carousel img {
-  opacity: 0;
-  transform: translateY(20px);
+  flex: 0 0 auto;
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  scroll-snap-align: start;
+
+  filter: grayscale(100%);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease,
+    transform 0.35s ease,
     filter 0.35s ease,
     box-shadow 0.35s ease;
 }
 
-.carousel.reveal img {
-  opacity: 1;
-  transform: translateY(0);
+.carousel img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.06) translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+
