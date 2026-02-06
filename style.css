@@ -206,11 +206,9 @@ body {
 .carousel {
   display: flex;
   gap: 1rem;
-
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-
   padding-bottom: 0.5rem;
 }
 
@@ -223,7 +221,6 @@ body {
   width: 280px;
   height: 180px;
   object-fit: cover;
-
   scroll-snap-align: start;
 
   filter: grayscale(100%);
@@ -238,6 +235,7 @@ body {
   transform: scale(1.06) translateY(-4px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+
 
 /* esconder scrollbar */
 .carousel::-webkit-scrollbar {
