@@ -213,7 +213,7 @@ body {
 }
 
 .project-split + .carousel {
-  margin-top: 10rem;
+  margin-top: 0.4rem;
 }
 
 .carousel img {
