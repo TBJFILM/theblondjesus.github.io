@@ -141,7 +141,7 @@ body {
 ===================== */
 
 .project-block {
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
 /* =====================
@@ -153,7 +153,7 @@ body {
   grid-template-columns: 1.4fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 /* =====================
