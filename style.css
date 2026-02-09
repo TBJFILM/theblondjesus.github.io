@@ -490,3 +490,20 @@ body {
     border-radius: 2px;
   }
 }
+/* =====================
+   PERFORMANCE OPTIMIZATION
+===================== */
+
+/* evita repaints desnecessários */
+.project-video,
+.carousel img,
+.hero-video iframe {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* animações só quando visíveis */
+.fade-up,
+.fade-in {
+  will-change: opacity, transform;
+}
