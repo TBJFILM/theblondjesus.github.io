@@ -381,3 +381,14 @@ body {
     transform: translateY(0);
   }
 }
+/* =====================
+   TYPOGRAPHY
+===================== */
+
+.hero-text h1,
+.category h2,
+.project-info h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2em;
+}
+
