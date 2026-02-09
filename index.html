@@ -14,6 +14,23 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+  
+<script>
+  const revealElements = document.querySelectorAll('.fade-up, .fade-in, .carousel');
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealElements.forEach(el => observer.observe(el));
+</script>
 
 <body>
 
@@ -49,11 +66,11 @@
 <!-- =====================
      COMMERCIAL VIDEOS
 ===================== -->
-<section class="category" id="commercial">
+<section class="category fade-up" id="commercial">
   <h2>Commercial Videos</h2>
 
   <!-- PROJECT 1 -->
-<div class="project-block">
+<div class="project-block fade-up">
 
   <div class="project-split">
     <div class="project-media">
