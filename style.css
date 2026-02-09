@@ -100,7 +100,7 @@ body {
   height: 120%;
   border: 0;
   pointer-events: none;
-  transform: translate(-10%, -10%) scale(1.18);
+  transform: translate(-10%, -10%) scale(1.15);
   backface-visibility: hidden;
   transform: translateZ(0);
 }
