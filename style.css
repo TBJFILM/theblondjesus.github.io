@@ -100,7 +100,7 @@ body {
   height: 120%;
   border: 0;
   pointer-events: none;
-  transform: translate(-10%, -10%) scale(1.15);
+  transform: translate(-10%, -10%) scale(1.18);
   backface-visibility: hidden;
   transform: translateZ(0);
 }
@@ -289,10 +289,10 @@ footer a:hover {
 ===================== */
 
 .fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
+  transform: translateY(24px);
+  transition:
+    opacity 0.9s cubic-bezier(.22,.61,.36,1),
+    transform 0.9s cubic-bezier(.22,.61,.36,1);
 }
 
 .reveal {
