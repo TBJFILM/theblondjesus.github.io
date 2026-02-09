@@ -390,6 +390,8 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(3rem, 7vw, 6rem);
   letter-spacing: 0.28em;
+  text-transform: uppercase; /* look cinema */
+  opacity: 0.95;
 }
 
 .project-info h3 {
