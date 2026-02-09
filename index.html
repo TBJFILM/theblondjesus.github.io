@@ -16,13 +16,14 @@
 </head>
   
 <script>
-  const revealElements = document.querySelectorAll('.fade-up, .fade-in, .carousel');
+  const revealElements = document.querySelectorAll('.fade-up');
 
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('reveal');
+          observer.unobserve(entry.target);
         }
       });
     },
@@ -92,7 +93,7 @@
     </div>
   </div>
     
-    <div class="carousel">
+    <div class="carousel" fade-up">
       <img src="frames/RELCAP-01.jpg">
       <img src="frames/RELCAP-02.jpg">
       <img src="frames/RELCAP-03.jpg">
@@ -104,7 +105,7 @@
   </div>
 
   <!-- PROJECT 2 -->
-  <div class="project-block">
+  <div class="project-block fade-up">
 
   <div class="project-split">
     <div class="project-media">
@@ -125,7 +126,7 @@
     </div>
   </div>
 
-    <div class="carousel">
+    <div class="carousel fade-up">
       <img src="frames/PROMO-MF-01.jpg">
       <img src="frames/PROMO-MF-02.jpg">
       <img src="frames/PROMO-MF-03.jpg">
@@ -147,7 +148,7 @@
 <section class="category" id="music">
   <h2>Music Videos</h2>
 
-  <div class="project-block">
+  <div class="project-block fade-up">
 
   <div class="project-split">
     <div class="project-media">
@@ -168,7 +169,7 @@
     </div>
   </div>
 
-    <div class="carousel">
+    <div class="carousel fade-up">
       <img src="frames/O-TEU-CHEIRO-01.jpg">
       <img src="frames/O-TEU-CHEIRO-02.jpg">
       <img src="frames/O-TEU-CHEIRO-03.jpg">
@@ -179,7 +180,7 @@
   </div>
 
   <!-- MUSIC VIDEO 2 -->
- <div class="project-block">
+ <div class="project-block fade-up">
 
   <div class="project-split">
     <div class="project-media">
@@ -200,7 +201,7 @@
     </div>
   </div>
 
-    <div class="carousel">
+    <div class="carousel fade-up">
       <img src="frames/NDPP-01.jpg">
       <img src="frames/NDPP-02.jpg">
       <img src="frames/NDPP-03.jpg">
@@ -218,7 +219,7 @@
   </div>
 
   <!-- MUSIC VIDEO 3 -->
-  <div class="project-block">
+  <div class="project-block fade-up">
 
   <div class="project-split">
     <div class="project-media">
@@ -239,7 +240,7 @@
     </div>
   </div>
 
-    <div class="carousel">
+    <div class="carousel fade-up">
       <img src="frames/TROVOADA-01.jpg">
       <img src="frames/TROVOADA-02.jpg">
       <img src="frames/TROVOADA-03.jpg">
