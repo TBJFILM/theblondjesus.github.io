@@ -431,3 +431,62 @@ body {
     transform: translateY(0);
   }
 }
+/* =====================
+   HERO MOBILE FULL
+===================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 100svh; /* corrige bugs iOS */
+  }
+
+  .hero-video iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.18); /* zoom cinematográfico controlado */
+    will-change: transform;
+  }
+}
+/* =====================
+   SCROLL ANIMATIONS (MOBILE SAFE)
+===================== */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* desativa hover pesado no mobile */
+@media (hover: none) {
+  .carousel img:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+/* =====================
+   CAROUSEL MOBILE TIGHT
+===================== */
+
+@media (max-width: 768px) {
+
+  .carousel {
+    margin-top: 0.6rem;
+    gap: 0.6rem;
+  }
+
+  .carousel img {
+    width: 160px;
+    height: 105px;
+    border-radius: 2px;
+  }
+}
