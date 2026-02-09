@@ -382,13 +382,25 @@ body {
   }
 }
 /* =====================
-   TYPOGRAPHY
+   TYPOGRAPHY – FINE TUNING
 ===================== */
 
-.hero-text h1,
-.category h2,
+.hero-text h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  letter-spacing: 0.25em;
+}
+
+.category h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.35em;
+}
+
 .project-info h3 {
   font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 0.2em;
+  font-size: 1.8rem;
+  letter-spacing: 0.18em;
 }
+
 
